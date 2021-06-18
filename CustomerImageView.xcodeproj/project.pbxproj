@@ -13,6 +13,7 @@
 		E8E8E4CD267C86EE00BF3132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E8E4CB267C86EE00BF3132 /* Main.storyboard */; };
 		E8E8E4CF267C86F200BF3132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E8E4CE267C86F200BF3132 /* Assets.xcassets */; };
 		E8E8E4D2267C86F200BF3132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E8E4D0267C86F200BF3132 /* LaunchScreen.storyboard */; };
+		E8E8E4DF267C91AB00BF3132 /* SwiftyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8E4DE267C91AB00BF3132 /* SwiftyAvatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E8E8E4CE267C86F200BF3132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8E8E4D1267C86F200BF3132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8E8E4D3267C86F200BF3132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E8E4DE267C91AB00BF3132 /* SwiftyAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyAvatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E8E8E4C5267C86EE00BF3132 /* AppDelegate.swift */,
 				E8E8E4C7267C86EE00BF3132 /* SceneDelegate.swift */,
 				E8E8E4C9267C86EE00BF3132 /* ViewController.swift */,
+				E8E8E4DE267C91AB00BF3132 /* SwiftyAvatar.swift */,
 				E8E8E4CB267C86EE00BF3132 /* Main.storyboard */,
 				E8E8E4CE267C86F200BF3132 /* Assets.xcassets */,
 				E8E8E4D0267C86F200BF3132 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				E8E8E4CA267C86EE00BF3132 /* ViewController.swift in Sources */,
 				E8E8E4C6267C86EE00BF3132 /* AppDelegate.swift in Sources */,
+				E8E8E4DF267C91AB00BF3132 /* SwiftyAvatar.swift in Sources */,
 				E8E8E4C8267C86EE00BF3132 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

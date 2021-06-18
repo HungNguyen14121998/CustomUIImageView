@@ -10,20 +10,17 @@ import UIKit
 
 @IBDesignable public class SwiftyAvatar: UIImageView {
     
-    init(size:CGFloat = 200, roundess:CGFloat = 2, borderWidth:CGFloat = 5, borderColor:UIColor = UIColor.blue, background:UIColor = UIColor.clear){
+    init(size:CGFloat = 200, roundess:CGFloat = 2, borderWidth:CGFloat = 0, borderColor:UIColor = UIColor.white, background:UIColor = UIColor.clear){
         self.roundness = roundess
         self.borderWidth = borderWidth
         self.borderColor = borderColor
         self.background = background
         
-        
-        
         super.init(frame: CGRect(x: 0, y: 0, width: size, height: size))
     }
     
-    init(name: String, image: UIImage?) {
+    init(name: String, image: UIImage?, color: UIColor) {
         var initializationImage = UIImage()
-        
         if image != nil {
             initializationImage = image!
         }
@@ -33,7 +30,7 @@ import UIKit
                 let paragraphStyle = NSMutableParagraphStyle()
                 paragraphStyle.alignment = .center
                 let font = UIFont(name: "HelveticaNeue-Medium", size: 100)!
-                let attributes = [NSAttributedString.Key.font: font, NSAttributedString.Key.paragraphStyle: paragraphStyle, NSAttributedString.Key.foregroundColor: UIColor.black]
+                let attributes = [NSAttributedString.Key.font: font, NSAttributedString.Key.paragraphStyle: paragraphStyle, NSAttributedString.Key.foregroundColor: color]
                 let string = name
                 let cgRect = CGRect(x: 0, y: 40, width: 200, height: 200)
                 string.draw(with: cgRect, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
@@ -42,15 +39,6 @@ import UIKit
         
         super.init(image: initializationImage)
     }
-    
-    //
-    
-    @IBInspectable var name: String = "" {
-        didSet{
-            setNeedsLayout()
-        }
-    }
-    //
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -66,13 +54,13 @@ import UIKit
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat = 5 {
+    @IBInspectable var borderWidth: CGFloat = 0 {
         didSet{
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var borderColor: UIColor = UIColor.blue {
+    @IBInspectable var borderColor: UIColor = UIColor.clear {
         didSet{
             setNeedsLayout()
         }
