@@ -48,6 +48,7 @@ extension ViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         let fullName = textField.text ?? ""
         
+        //Take all capital letters of fullName: A -> Z Ă Â Ê Ư Ô Ơ Đ based on the value ASCII charset:
         let capitalLetters = (fullName.unicodeScalars.filter {
             let word = $0.value
             let result = (word > 64 && word < 91) || word == 202 || word == 212 || word == 416 || word == 431 || word == 258 || word == 194 || word == 272
